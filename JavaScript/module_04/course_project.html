@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>
+      Module 3 Course Project: First Program
+    </title>
+  </head>
+
+  <body>
+    <center>
+    <h1>Module 4: My first program</h1>
+    <h3>Cheese Shop database</h3>
+
+    <p>What is your name?</p> <input type="text" id ="nameInput" value ="Type Answer Here">
+
+    <p>Are you a manager or sales associate?:</p> <input type="text" id ="roleInput" value ="Type Answer Here">
+
+    <p><button onclick="nameOutput(), roleOutput()">Display Answer</button></p>
+
+
+    <p id="nameOutputArea"></p>
+
+    <script>
+      function nameOutput(){
+        var output = document.getElementById("nameInput").value;
+        document.getElementById("nameOutputArea").innerHTML =
+        "Hello, " + output + ". Welcome to the Cheese Shop Data Base."
+
+      }
+    </script>
+
+    <p id="roleOutputArea"></p>
+
+    <script>
+      function roleOutput(){
+        var output = document.getElementById("roleInput").value;
+        if (output == "manager")
+        {
+          document.getElementById("roleOutputArea").innerHTML =
+          "You have managment permissions and may view the full page."
+        }
+        else
+        {
+          document.getElementById("roleOutputArea").innerHTML =
+          "Some items may be hidden on this page due to permissions."
+        }
+      }
+    </script>
+  </body>
+</html>
