@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title> Module 4 Activity; Conditional Statements </title>
+  </head>
+
+  <body>
+    <center>
+      <h1> Module 4 Activity </h1>
+      <h2> Sorting strings in alphabetical order.</h2>
+      <script>
+      var x= "Rosemary";
+      var y= "Basil";
+      var z= "Oregano";
+      if (x<y && x<z)
+        {
+          if (y<z)
+        {
+            alert("Herbs in alphabetical order: \n"  + x + ", " + y + ", " +z);
+        }
+        else
+        {
+            alert("Herbs in alphabetical order: \n" + x + ", " + z + ", " +y);
+        }
+      }
+      else if (y<x && y<z)
+      {
+        if (x<z)
+        {
+             alert("Herbs in alphabetical order: \n" + y + ", " + x + ", " +z);
+        }
+        else
+        {
+             alert("Herbs in alphabetical order: \n" + y + ", " + z + ", " +x);
+        }
+      }
+      else if (z<x && z<y)
+      {
+        if (x<y)
+        {
+            alert("Herbs in alphabetical order: \n" + z + ", " + x + ", " +y);
+        }
+        else
+        {
+            alert("Herbs in alphabetical order: \n" + z + ", " + y + ", " +x);
+        }
+      }
+    </script>
+    </center>
+  </body>
+<html>
