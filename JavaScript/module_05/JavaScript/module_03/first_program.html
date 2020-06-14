@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>
+      Module 3 Course Project: First Program
+    </title>
+  </head>
+
+  <body>
+    <center>
+    <h1>Module 3: My first program!</h1>
+    <h3>Entering a text string to then display.</h3>
+
+    <p>What is your favorite Video Game?:</p> <input type="text" id ="myText" value ="Type Answer Here">
+    <p>Click the "Display" button to see your</p>
+    <p>answer in the display area!</p>
+
+    <button onclick="outputDemo()">Display Answer</button>
+
+    <p id="outputArea"></p>
+
+    <script>
+      function outputDemo(){
+        var output = document.getElementById("myText").value;
+        document.getElementById("outputArea").innerHTML = output;
+      }
+    </script>
+
+  </body>
+</html>
