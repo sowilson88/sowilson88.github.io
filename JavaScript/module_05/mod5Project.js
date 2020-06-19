@@ -6,9 +6,11 @@ function displayData()
   var city = document.getElementById("cityInput").value;
   var state = document.getElementById("stateInput").value;
 
-  console.log(fName);
-  console.log(lName);
-  console.log(address);
-  console.log(city);
-  console.log(state);
+  var nameOutput = "hello, " + fName + " " + lName + ".";
+  var addressOutput = "The address you enterd is: " + address + " " + city + ", " + state + ".";
+
+
+
+  document.getElementById("nameOutput").innerHTML = nameOutput;
+  document.getElementById("addressOutput").innerHTML = addressOutput;
 }

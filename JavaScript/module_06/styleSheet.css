@@ -1,0 +1,21 @@
+table{
+  border: solid 3pt purple;
+}
+
+th {
+  padding: 10pt;
+  background-color: #b39cc9;
+  text-align: center;
+}
+
+td{
+  padding: 10pt;
+  text-align: center;
+}
+
+tr:hover{
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
