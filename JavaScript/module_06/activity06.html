@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title> Mod 6 Performing Calculations </title>
+  </head>
+
+  <body>
+    <center>
+      <h2>Convert Celsius to Fahrenheit</h2>
+
+      <p>
+        Enter the temperature in Celsius.
+        <input type="text" id="celsiusInput">
+      </p>
+
+      <button onclick="convertData()">
+        Enter
+      </button>
+
+      <p id=output></p>
+
+    </center>
+
+    <script>
+      function convertData(){
+        var x = parseInt(document.getElementById("celsiusInput").value);
+        var output = x*1.8+32;
+
+      document.getElementById("output").innerHTML=
+      +x+" degrees in Celsius is "+output+" degrees in Fahrenheit."
+      }
+    </script>
+  </body>
+<html>
