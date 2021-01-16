@@ -31,20 +31,26 @@ function problemThree(event) {
   }
 }
 
-let elementThree = document.contains("#remove-my-children-then-me")
-elementThree.addEventListener('click', problemThree);
+//let elementThree = document.contains("#remove-my-children-then-me")
+//elementThree.addEventListener('click', problemThree);
 
 /* ---------------------------------------- */
 
 function problemFour( event ) {
 
   const target = event.target;
+function problemFour(event ) {
 
+  const target = event.target;
+  let newNode = document.createElement("div");
+  newNode.className = 'child';
+  let newText = document.createTextNode("New Child");
+  newNode.appendChild(newText);
+  target.appendChild(newNode);
 }
 
-// reference the elment "#add-children" and add an eventlistener for the click event:
-// your code here:
-
+let elementFour = document.querySelector("#add-children")
+elementFour.addEventListener('click', problemFour);
 /* ---------------------------------------- */
 
 function problemFive({target}) {
