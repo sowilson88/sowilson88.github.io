@@ -54,11 +54,11 @@ elementFour.addEventListener('click', problemFour);
 function problemFive({target}) {
 
   const  target01 = event.target;
-  target01.parentNode.removeChild(target01);
+  target.parentNode.removeChild(target).appendChild(target);
 
 }
 
-let elementFive = document.querySelector("#add-children")
+let elementFive = document.querySelector("#to-the-back")
 elementFive.addEventListener('click', problemFive);
 /* ---------------------------------------- */
 
