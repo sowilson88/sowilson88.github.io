@@ -26,19 +26,16 @@ elementTwo.addEventListener('click', problemTwo);
 function problemThree(event) {
 
   const target = event.target;
-  if(target.parentNode.contains("child")){
+  if(target.classList.contains("child")){
     target.parentNode.removeChild(target);
   }
 }
 
-//let elementThree = document.contains("#remove-my-children-then-me")
-//elementThree.addEventListener('click', problemThree);
+let elementThree = document.querySelector('#remove-my-children-then-me')
+elementThree.addEventListener('click', problemThree);
 
 /* ---------------------------------------- */
 
-function problemFour( event ) {
-
-  const target = event.target;
 function problemFour(event ) {
 
   const target = event.target;
@@ -51,18 +48,18 @@ function problemFour(event ) {
 
 let elementFour = document.querySelector("#add-children")
 elementFour.addEventListener('click', problemFour);
+
 /* ---------------------------------------- */
 
 function problemFive({target}) {
 
   const  target01 = event.target;
-  // your code here
+  target01.parentNode.removeChild(target01);
 
 }
 
-// reference the elment "#to-the-back" and add an eventlistener for the mouseup event:
-// your code here:
-
+let elementFive = document.querySelector("#add-children")
+elementFive.addEventListener('click', problemFive);
 /* ---------------------------------------- */
 
 
