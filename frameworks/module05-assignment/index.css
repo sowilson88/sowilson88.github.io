@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: "Verdana", cursive, sans-serif;
+  color: #F4E8C1;
+}
+
+body{
+  background-color: #726A95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: #351F39;
+  width: 450px;
+  height: 250px;
+  border: solid 5px #A0C1B8;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scoreSection {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+.questionSection {
+  width: 100%;
+  position: relative;
+}
+
+.questionNumber {
+  margin-bottom: 20px;
+}
+
+.questionNumber span {
+  font-size: 28px;
+}
+
+.questionText {
+  margin-bottom: 12px;
+}
+
+.answerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color:#351F39;
+  background-color: #709FB0;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+  justify-content: center;
+  border: 3px solid #F4E8C1;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #A0C1B8;
+}
+
+button:focus {
+  outline: none;
+}
